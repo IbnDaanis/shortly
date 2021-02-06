@@ -1,4 +1,5 @@
 import { Header } from './components'
+import { Hero } from './containers'
 import GlobalStyle from './styles/globalStyle'
 
 const App = () => {
@@ -6,6 +7,9 @@ const App = () => {
     <div>
       <GlobalStyle />
       <Header />
+      <main>
+        <Hero />
+      </main>
     </div>
   )
 }
