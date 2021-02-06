@@ -8,7 +8,7 @@ export const Container = styled.div`
   background-image: url('./images/bg-shorten-desktop.svg');
   background-position: 0% 0%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   margin-bottom: 100rem;
   position: relative;
   transform: translateY(-50%);
