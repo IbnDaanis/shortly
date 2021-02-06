@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import useScroll from '../../hooks/useScroll'
 import {
   HeaderContainer,
   Container,
@@ -13,8 +14,17 @@ import { MdClose } from 'react-icons/md'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const { scrollY } = useScroll()
+  useEffect(() => {
+    if (scrollY > -120) {
+      setScrolled(true)
+    } else {
+      setScrolled(false)
+    }
+  }, [scrollY])
   return (
-    <HeaderContainer>
+    <HeaderContainer scrolled={scrolled}>
       <nav>
         <Container>
           <Logo src='./images/logo.svg' />

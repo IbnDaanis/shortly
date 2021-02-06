@@ -2,6 +2,11 @@ import styled from 'styled-components/macro'
 import { neutral, primary } from '../../styles/styleVariables'
 
 export const HeroContainer = styled.section`
+  width: 100%;
+  overflow-x: hidden;
+`
+
+export const Container = styled.div`
   margin: 180px auto 0;
   width: 1100px;
   max-width: 90%;
@@ -72,6 +77,7 @@ export const HeroCTA = styled.div`
 `
 
 export const HeroImage = styled.div`
+  width: 100%;
   img {
     padding-left: 3rem;
     @media (max-width: 800px) {

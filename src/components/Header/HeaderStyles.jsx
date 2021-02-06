@@ -3,9 +3,13 @@ import { neutral, primary } from '../../styles/styleVariables'
 
 export const HeaderContainer = styled.header`
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
+  background: ${props =>
+    props.scrolled ? 'rgba(255, 255, 255, 0.8)' : 'none'};
+  transition: 0.2s ease-in-out;
 `
 
 export const Container = styled.div`
