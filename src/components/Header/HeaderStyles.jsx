@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   left: 0;
   width: 100%;
   background: ${props =>
-    props.scrolled ? 'rgba(255, 255, 255, 0.8)' : 'none'};
+    props.scrolled ? 'rgba(255, 255, 255, 0.95)' : 'none'};
   transition: 0.2s ease-in-out;
 `
 

@@ -1,5 +1,5 @@
 import { Header } from './components'
-import { Hero } from './containers'
+import { Hero, Shortener } from './containers'
 import GlobalStyle from './styles/globalStyle'
 
 const App = () => {
@@ -9,6 +9,7 @@ const App = () => {
       <Header />
       <main>
         <Hero />
+        <Shortener />
       </main>
     </div>
   )
