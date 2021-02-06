@@ -38,21 +38,21 @@ export const HeroCTA = styled.div`
     }
     @media (max-width: 1000px) {
       text-align: center;
+      max-width: 400px;
       font-size: 3.15rem;
     }
-    @media (max-width: 800px) {
-      font-size: 3rem;
-      max-width: 400px;
-    }
     @media (max-width: 420px) {
-      font-size: 2.5rem;
+      font-size: 2.75rem;
+    }
+    @media (max-width: 375px) {
+      font-size: 2.25rem;
     }
   }
   .description {
     font-size: 18px;
     font-weight: 500;
     color: ${neutral.grayishViolet};
-    max-width: 500px;
+    max-width: 330px;
     @media (max-width: 1000px) {
       margin-top: 1rem;
       text-align: center;
