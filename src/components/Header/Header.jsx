@@ -9,6 +9,7 @@ import {
   Menu,
 } from './HeaderStyles'
 import { HiMenu } from 'react-icons/hi'
+import { MdClose } from 'react-icons/md'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -35,7 +36,7 @@ const Header = () => {
             </LoginSignUp>
           </Menu>
           <MenuIcon onClick={() => setIsMenuOpen(isMenuOpen => !isMenuOpen)}>
-            <HiMenu />
+            {isMenuOpen ? <MdClose /> : <HiMenu />}
           </MenuIcon>
         </Container>
       </nav>
