@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header`
 export const Container = styled.div`
   margin: 0 auto;
   width: 1100px;
-  max-width: 95%;
+  max-width: 90%;
   height: 130px;
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@ export const Menu = styled.div`
     flex-direction: column;
     border-radius: 12px;
     top: 100px;
-    max-width: 500px;
+    max-width: 380px;
     right: 0;
   }
 `
@@ -55,7 +55,7 @@ export const NavLinks = styled.ul`
 
   @media (max-width: 1000px) {
     flex-direction: column;
-    padding: 0.5rem 0 1rem;
+    padding: 1.5rem 0;
     margin-bottom: 1.5rem;
     border-bottom: 2px solid #494161;
     width: 300px;
@@ -70,12 +70,14 @@ export const NavLinks = styled.ul`
 
     @media (max-width: 1000px) {
       color: white;
-      padding: 0.75rem 0;
+      padding: 1rem 0;
     }
-    &:hover {
-      color: ${neutral.veryDarkBlue};
-      @media (max-width: 1000px) {
-        color: ${neutral.grayishViolet};
+    @media (hover: hover) {
+      &:hover {
+        color: ${neutral.veryDarkBlue};
+        @media (max-width: 1000px) {
+          color: ${neutral.grayishViolet};
+        }
       }
     }
   }
@@ -86,7 +88,7 @@ export const LoginSignUp = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: column;
-    padding: 0.5rem 0 1rem;
+    padding: 0.5rem 0 1.5rem;
     margin-bottom: 1rem;
     width: 100%;
   }
@@ -100,13 +102,15 @@ export const LoginSignUp = styled.div`
 
     @media (max-width: 1000px) {
       color: white;
-      margin: 0 0 1rem;
+      margin: 0 0 2rem;
     }
 
-    &:hover {
-      color: ${neutral.veryDarkBlue};
-      @media (max-width: 1000px) {
-        color: ${neutral.grayishViolet};
+    @media (hover: hover) {
+      &:hover {
+        color: ${neutral.veryDarkBlue};
+        @media (max-width: 1000px) {
+          color: ${neutral.grayishViolet};
+        }
       }
     }
   }
@@ -125,6 +129,7 @@ export const LoginSignUp = styled.div`
     @media (max-width: 1000px) {
       font-size: 18px;
       width: 300px;
+      height: 50px;
       max-width: 90%;
     }
   }
@@ -143,7 +148,9 @@ export const MenuIcon = styled.div`
     display: flex;
   }
 
-  &:hover {
-    color: ${neutral.veryDarkBlue};
+  @media (hover: hover) {
+    &:hover {
+      color: ${neutral.veryDarkBlue};
+    }
   }
 `
