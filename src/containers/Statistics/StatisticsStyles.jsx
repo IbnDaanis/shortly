@@ -1,0 +1,47 @@
+import styled from 'styled-components/macro'
+import { neutral } from '../../styles/styleVariables'
+
+export const StatisticsContainer = styled.section`
+  width: 100%;
+  background: #f0f1f6;
+  margin: 0 auto;
+`
+
+export const Container = styled.div`
+  width: 1100px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 0 6rem;
+`
+
+export const HeadingContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+
+export const Title = styled.h2`
+  color: ${neutral.veryDarkViolet};
+  font-size: 2.1rem;
+  text-align: center;
+  padding: 0 0 1rem;
+
+  @media (max-width: 420px) {
+    font-size: 1.8rem;
+  }
+`
+
+export const Description = styled.p`
+  color: ${neutral.grayishViolet};
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 460px;
+`
+
+export const FeaturesContainer = styled.div`
+  margin-top: 5rem;
+  display: flex;
+`

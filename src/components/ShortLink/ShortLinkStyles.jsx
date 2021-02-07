@@ -7,7 +7,7 @@ export const ShortLinkContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.25rem;
   border-radius: 5px;
   margin-bottom: 1rem;
   transform: translateY(-2.5rem);
