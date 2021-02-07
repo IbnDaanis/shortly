@@ -17,7 +17,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false)
   const { scrollY } = useScroll()
   useEffect(() => {
-    if (scrollY > -120) {
+    if (scrollY > 1) {
       setScrolled(true)
     } else {
       setScrolled(false)
@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <HeaderContainer scrolled={scrolled}>
       <nav>
-        <Container>
+        <Container scrolled={scrolled}>
           <Logo src='./images/logo.svg' />
           <Menu isMenuOpen={isMenuOpen}>
             <NavLinks>

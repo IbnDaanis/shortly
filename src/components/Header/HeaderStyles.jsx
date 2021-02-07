@@ -16,11 +16,13 @@ export const Container = styled.div`
   margin: 0 auto;
   width: 1100px;
   max-width: 90%;
-  height: 130px;
+  transition: 0.2s ease-in-out;
+  height: ${props => (props.scrolled ? '80px' : '130px')};
   display: flex;
   align-items: center;
   font-size: 15px;
   position: relative;
+
   @media (max-width: 1000px) {
     justify-content: space-between;
     font-size: 18px;
