@@ -45,4 +45,15 @@ export const FeaturesContainer = styled.div`
   margin-top: 5rem;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  @media (max-width: 1000px) {
+    align-items: center;
+    flex-direction: column;
+  }
+`
+
+export const Line = styled.div`
+  position: absolute;
+  height: 10px;
+  width: 100%;
 `
