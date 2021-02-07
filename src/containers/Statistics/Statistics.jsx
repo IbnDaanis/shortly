@@ -5,6 +5,7 @@ import {
   Description,
   FeaturesContainer,
   HeadingContainer,
+  Line,
   StatisticsContainer,
   Title,
 } from './StatisticsStyles'
@@ -41,6 +42,7 @@ const Statistics = () => {
           </Description>
         </HeadingContainer>
         <FeaturesContainer>
+          <Line />
           {data.map((item, index) => (
             <Feature
               path={item.path}

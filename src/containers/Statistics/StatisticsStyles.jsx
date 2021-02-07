@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro'
-import { neutral } from '../../styles/styleVariables'
+import { neutral, primary, secondary } from '../../styles/styleVariables'
 
 export const StatisticsContainer = styled.section`
   width: 100%;
@@ -55,5 +55,12 @@ export const FeaturesContainer = styled.div`
 export const Line = styled.div`
   position: absolute;
   height: 10px;
+  top: 50%;
   width: 100%;
+  background: ${primary.cyan};
+  @media (max-width: 1000px) {
+    height: 80%;
+    top: 0;
+    width: 10px;
+  }
 `
