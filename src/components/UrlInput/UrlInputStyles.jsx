@@ -71,7 +71,6 @@ export const FormInput = styled.input`
   padding-left: 1rem;
   font-weight: 500;
   font-size: 18px;
-  border: ;
   @media (max-width: 600px) {
     margin-bottom: 2.5rem;
     flex: unset;
