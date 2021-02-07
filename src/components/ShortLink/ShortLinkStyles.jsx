@@ -10,7 +10,7 @@ export const ShortLinkContainer = styled.div`
   padding: 1rem 2rem;
   border-radius: 5px;
   margin-bottom: 1rem;
-
+  transform: translateY(-4.5rem);
   @media (max-width: 800px) {
     flex-direction: column;
     align-items: flex-start;

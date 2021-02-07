@@ -66,10 +66,12 @@ export const FormInput = styled.input`
   width: 100%;
   height: 52px;
   border-radius: 10px;
-  border: 2px solid transparent;
+  border: ${props =>
+    props.error ? `2px solid ${secondary.red}` : '2px solid transparent'};
   padding-left: 1rem;
   font-weight: 500;
   font-size: 18px;
+  border: ;
   @media (max-width: 600px) {
     margin-bottom: 2.5rem;
     flex: unset;
@@ -79,10 +81,6 @@ export const FormInput = styled.input`
     font-weight: 500;
     color: ${neutral.grayishViolet};
   }
-
-  /* &:hover {
-    border: 2px solid ${secondary.red};
-  } */
 `
 
 export const FormButton = styled.button`
@@ -96,6 +94,11 @@ export const FormButton = styled.button`
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
 
   @media (max-width: 600px) {
     width: 100%;
