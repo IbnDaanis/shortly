@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import {
   Container,
@@ -9,14 +9,10 @@ import {
 } from './UrlInputStyles'
 
 const UrlInput = ({ data, setData }) => {
-  const [url, setUrl] = useState(null)
+  const [url, setUrl] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
   const [errorMessage, setErrorMessage] = useState('')
-
-  useEffect(() => {
-    console.log(data)
-  }, [data])
 
   const handleSubmit = async e => {
     e.preventDefault()

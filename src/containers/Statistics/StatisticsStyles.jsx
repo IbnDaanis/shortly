@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro'
-import { neutral, primary, secondary } from '../../styles/styleVariables'
+import { neutral, primary } from '../../styles/styleVariables'
 
 export const StatisticsContainer = styled.section`
   width: 100%;
