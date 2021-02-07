@@ -40,7 +40,8 @@ export const Menu = styled.div`
     background: ${primary.darkViolet};
     flex-direction: column;
     border-radius: 12px;
-    top: 100px;
+    transition: top 0.2s ease-in-out;
+    top: ${props => (props.scrolled ? '70px' : '100px')};
     max-width: 380px;
     right: 0;
   }

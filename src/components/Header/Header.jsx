@@ -28,7 +28,7 @@ const Header = () => {
       <nav>
         <Container scrolled={scrolled}>
           <Logo src='./images/logo.svg' />
-          <Menu isMenuOpen={isMenuOpen}>
+          <Menu scrolled={scrolled} isMenuOpen={isMenuOpen}>
             <NavLinks>
               <li>
                 <a href='#'>Features</a>
