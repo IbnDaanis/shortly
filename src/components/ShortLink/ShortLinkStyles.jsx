@@ -10,17 +10,37 @@ export const ShortLinkContainer = styled.div`
   padding: 1rem 2rem;
   border-radius: 5px;
   margin-bottom: 1rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
 `
 
 export const OriginalLink = styled.a`
   font-size: 1.2rem;
   font-weight: 500;
   color: ${neutral.veryDarkViolet};
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0 2rem 0.5rem;
+    border-bottom: 1px solid #dadada;
+  }
 `
 
 export const ShortenedLinkContainer = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+    width: 100%;
+  }
 `
 
 export const ShortenedLink = styled.a`
@@ -28,6 +48,14 @@ export const ShortenedLink = styled.a`
   font-weight: 500;
   color: ${primary.cyan};
   margin-right: 1.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 280px;
+  @media (max-width: 800px) {
+    padding: 1rem 0;
+    max-width: 100%;
+  }
 `
 export const CopyButton = styled.button`
   background: ${props =>
@@ -41,5 +69,9 @@ export const CopyButton = styled.button`
   border: 0;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `
