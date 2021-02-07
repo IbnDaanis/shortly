@@ -1,4 +1,4 @@
-import { Header } from './components'
+import { Boost, Header } from './components'
 import { Hero, Shortener, Statistics } from './containers'
 import GlobalStyle from './styles/globalStyle'
 
@@ -11,6 +11,7 @@ const App = () => {
         <Hero />
         <Shortener />
         <Statistics />
+        <Boost />
       </main>
     </div>
   )
