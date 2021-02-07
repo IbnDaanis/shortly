@@ -7,8 +7,9 @@ export const Container = styled.div`
   padding: 1.5rem;
   background: white;
   border-radius: 5px;
-  width: 350px;
+  width: 310px;
   position: relative;
+  transform: translateY(${props => props.index * 30 + 'px'});
 `
 
 export const Icon = styled.div`

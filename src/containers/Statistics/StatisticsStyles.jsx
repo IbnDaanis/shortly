@@ -44,4 +44,5 @@ export const Description = styled.p`
 export const FeaturesContainer = styled.div`
   margin-top: 5rem;
   display: flex;
+  justify-content: space-between;
 `

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container, Description, Icon, Title } from './FeatureStyles'
 
-const Feature = ({ path, title, description }) => {
+const Feature = ({ path, title, description, index }) => {
   return (
-    <Container>
+    <Container index={index}>
       <Icon>
         <img src={`./images/${path}.svg`} alt='Icon' />
       </Icon>
