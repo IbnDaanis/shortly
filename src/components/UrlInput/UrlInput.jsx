@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+
 import {
   Container,
   Form,
@@ -7,9 +8,8 @@ import {
   FormInputContainer,
 } from './UrlInputStyles'
 
-const UrlInput = () => {
+const UrlInput = ({ data, setData }) => {
   const [url, setUrl] = useState(null)
-  const [data, setData] = useState(null)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const UrlInput = () => {
     setLoading(true)
     const fetchData = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`)
     const response = await fetchData.json()
-    setData(response.result)
+    setData(data => [...data, response.result])
     setLoading(false)
   }
 
