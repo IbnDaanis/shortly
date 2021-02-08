@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro'
-import { neutral } from '../../styles/styleVariables'
+import { neutral, primary } from '../../styles/styleVariables'
 
 export const FooterContainer = styled.footer`
   width: 100%;
@@ -13,13 +13,14 @@ export const Container = styled.div`
   width: 1100px;
   max-width: 90%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
 `
 
 export const Logo = styled.div`
   color: white;
   font-size: 1.3rem;
+  line-height: 1.3rem;
 `
 
 export const LinksContainer = styled.div`
@@ -31,6 +32,23 @@ export const LinksList = styled.ul`
   display: flex;
   list-style: none;
   flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  li {
+    margin: 0 0 0.5rem;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: ${primary.cyan};
+    }
+  }
+`
+
+export const ListTitle = styled.h4`
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 1rem;
 `
 
 export const Background = styled.div`
