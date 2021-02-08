@@ -11,7 +11,10 @@ export const Container = styled.div`
   width: 1100px;
   max-width: 90%;
   margin: 0 auto;
-  padding: 0 0 6rem;
+  padding: 0 0 12rem;
+  @media (max-width: 1000px) {
+    padding: 0 0 1rem;
+  }
 `
 
 export const HeadingContainer = styled.div`

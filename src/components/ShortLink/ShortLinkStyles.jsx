@@ -70,7 +70,7 @@ export const CopyButton = styled.button`
   border: 0;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 
   @media (max-width: 800px) {
     width: 100%;

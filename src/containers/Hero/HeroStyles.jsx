@@ -4,6 +4,7 @@ import { neutral, primary } from '../../styles/styleVariables'
 export const HeroContainer = styled.section`
   width: 100%;
   overflow-x: hidden;
+  background: white;
 `
 
 export const Container = styled.div`
@@ -12,6 +13,7 @@ export const Container = styled.div`
   max-width: 90%;
   display: grid;
   grid-template-columns: 50% 50%;
+  padding: 0 0 8rem;
 
   @media (max-width: 1000px) {
     grid-template-columns: 100%;
@@ -54,7 +56,7 @@ export const HeroCTA = styled.div`
     font-size: 18px;
     font-weight: 500;
     color: ${neutral.grayishViolet};
-    max-width: 330px;
+    max-width: 450px;
     @media (max-width: 1000px) {
       margin-top: 1rem;
       text-align: center;

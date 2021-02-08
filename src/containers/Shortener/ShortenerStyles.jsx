@@ -3,7 +3,10 @@ import styled from 'styled-components/macro'
 export const ShortenerContainer = styled.section`
   width: 100%;
   background: #f0f1f6;
-  margin: 8rem auto 0;
+  padding: 8rem auto 0;
+  @media (max-width: 1000px) {
+    padding: 4rem auto 0;
+  }
 `
 
 export const Container = styled.div`
@@ -11,4 +14,7 @@ export const Container = styled.div`
   max-width: 90%;
   margin: 0 auto;
   padding: 0 0 4rem;
+  @media (max-width: 1000px) {
+    padding: 0 0 1rem;
+  }
 `
