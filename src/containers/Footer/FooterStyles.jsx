@@ -8,9 +8,29 @@ export const FooterContainer = styled.footer`
 `
 
 export const Container = styled.div`
-  margin: 180px auto 0;
+  margin: 0 auto;
+  padding: 3rem 0;
   width: 1100px;
   max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+`
+
+export const Logo = styled.div`
+  color: white;
+  font-size: 1.3rem;
+`
+
+export const LinksContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+export const LinksList = styled.ul`
+  display: flex;
+  list-style: none;
+  flex-direction: column;
 `
 
 export const Background = styled.div`

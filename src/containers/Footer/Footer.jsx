@@ -1,11 +1,26 @@
 import React from 'react'
-import { Container } from '../../components/Header/HeaderStyles'
-import { Background, FooterContainer } from './FooterStyles'
+import {
+  Background,
+  FooterContainer,
+  Container,
+  LinksContainer,
+  LinksList,
+  Logo,
+} from './FooterStyles'
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <Container>Footer</Container>
+      <Container>
+        <Logo>
+          <h2>Shortly</h2>
+        </Logo>
+        <LinksContainer>
+          <LinksList>
+            <li>Features</li>
+          </LinksList>
+        </LinksContainer>
+      </Container>
       <Background />
     </FooterContainer>
   )
