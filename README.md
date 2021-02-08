@@ -6,4 +6,4 @@
 
 ## Preview:
 
-![Preview](./images/preview.png)
+![Preview](./public/images/preview.png)
