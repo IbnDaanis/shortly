@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro'
 
-export const ShortenerContainer = styled.section`
+export const ShortenerContainer = styled.div`
   width: 100%;
   background: #f0f1f6;
   padding: 8rem auto 0;

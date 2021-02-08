@@ -72,7 +72,7 @@ export const LinksList = styled.ul`
   }
 `
 
-export const ListTitle = styled.h4`
+export const ListTitle = styled.p`
   font-size: 16px;
   font-weight: 700;
   color: white;
