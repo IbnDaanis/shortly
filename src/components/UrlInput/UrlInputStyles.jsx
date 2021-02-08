@@ -47,7 +47,7 @@ export const Form = styled.form`
 export const FormInputContainer = styled.div`
   position: relative;
   width: 100%;
-  h4 {
+  p {
     position: absolute;
     z-index: 10;
     top: 110%;

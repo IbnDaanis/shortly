@@ -52,6 +52,8 @@ const UrlInput = ({ data, setData }) => {
               type='text'
               placeholder='Shorten a link here...'
               value={url}
+              name='shortenLink'
+              title='Enter a URL to shorten it'
               onChange={({ target }) => {
                 setUrl(target.value)
                 setError(false)
@@ -60,7 +62,7 @@ const UrlInput = ({ data, setData }) => {
               error={error}
               disabled={loading}
             />
-            <h4>{errorMessage}</h4>
+            <p>{errorMessage}</p>
           </FormInputContainer>
           <FormButton type='submit' disabled={loading}>
             {loading ? 'Loading' : 'Shorten It!'}
