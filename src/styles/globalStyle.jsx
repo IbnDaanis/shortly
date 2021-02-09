@@ -71,6 +71,21 @@ html.has-scroll-dragging {
     right: auto;
     bottom: 0; }
 
+
+    .App {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  .scroll {
+    padding: 4vh 0;
+    pointer-events: none;
+  }
+  
+}
  * {
   margin: 0;
   padding: 0;
@@ -87,10 +102,13 @@ html.has-scroll-dragging {
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   overflow-x: hidden;
+  overscroll-behavior-y: none;
 }
 
 a {
