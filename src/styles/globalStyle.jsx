@@ -11,10 +11,13 @@ html.has-scroll-dragging {
   user-select: none; }
 
 .has-scroll-smooth body {
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
 .has-scroll-smooth [data-scroll-container] {
-  min-height: 100vh; }
+  min-height: 100vh; 
+  
+}
 
 [data-scroll-direction="horizontal"] [data-scroll-container] {
   white-space: nowrap;

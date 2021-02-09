@@ -22,9 +22,7 @@ const Header = () => {
     } else {
       setScrolled(false)
     }
-    console.log({ scrollY })
-  }, [scrollY, isMenuOpen])
-
+  }, [scrollY])
   return (
     <HeaderContainer scrolled={scrolled}>
       <nav>
