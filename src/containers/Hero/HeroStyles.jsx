@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro'
 import { neutral, primary } from '../../styles/styleVariables'
+import { motion } from 'framer-motion'
 
 export const HeroContainer = styled.section`
   width: 100%;
@@ -21,7 +22,7 @@ export const Container = styled.div`
   }
 `
 
-export const HeroCTA = styled.div`
+export const HeroCTA = styled(motion.div)`
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -84,7 +85,7 @@ export const HeroCTA = styled.div`
   }
 `
 
-export const HeroImage = styled.div`
+export const HeroImage = styled(motion.div)`
   width: 100%;
   img {
     padding-left: 3rem;
