@@ -17,11 +17,12 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false)
   const { scrollY } = useScroll()
   useEffect(() => {
-    if (scrollY > 1) {
+    if (scrollY > 10) {
       setScrolled(true)
     } else {
       setScrolled(false)
     }
+    // console.log({ scrolled, scrollY })
   }, [scrollY])
   return (
     <HeaderContainer scrolled={scrolled}>
