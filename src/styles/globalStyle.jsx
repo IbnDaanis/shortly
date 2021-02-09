@@ -71,9 +71,9 @@ button {
   overflow: hidden;
 
   .scroll {
-    padding: 0 0 50px;
+    padding: 0 0 130px;
     @media(max-width: 500px){
-      padding: 0;
+      padding: 0 0 0;
     }
   }
 }

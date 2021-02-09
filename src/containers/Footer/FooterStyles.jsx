@@ -9,7 +9,8 @@ export const FooterContainer = styled.footer`
 
 export const Container = styled.div`
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 0 3rem;
+  height: 100%;
   width: 1100px;
   max-width: 90%;
   display: grid;

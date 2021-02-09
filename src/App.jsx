@@ -34,7 +34,7 @@ const App = () => {
   //Set the height of the body to the height of the scrolling div
   const setBodyHeight = () => {
     document.body.style.height = `${
-      scrollContainer.current.getBoundingClientRect().height + 80
+      scrollContainer.current.getBoundingClientRect().height
     }px`
   }
 
@@ -53,7 +53,7 @@ const App = () => {
     const velocity = +acceleration
 
     //Assign skew and smooth scrolling to the scroll container
-    scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) `
+    scrollContainer.current.style.transform = `translateY(-${data.rounded}px) `
 
     //loop vai raf
     requestAnimationFrame(() => skewScrolling())
@@ -62,8 +62,8 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
+      <Header />
       <div ref={app} className='App'>
-        <Header />
         <div ref={scrollContainer} className='scroll'>
           <main>
             <Hero />
