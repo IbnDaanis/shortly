@@ -66,12 +66,12 @@ button {
   position: fixed;
   top: 0px;
   left: 0;
-  height:100%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 
   .scroll {
-    padding: 0 0 130px;
+    padding: 0 0 50px;
     @media(max-width: 500px){
       padding: 0;
     }
