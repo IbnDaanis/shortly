@@ -33,7 +33,7 @@ const App = () => {
   //Set the height of the body to the height of the scrolling div
   const setBodyHeight = () => {
     document.body.style.height = `${
-      scrollContainer.current.getBoundingClientRect().height + 130
+      scrollContainer.current.getBoundingClientRect().height
     }px`
   }
 
@@ -61,16 +61,16 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Header />
       <div ref={app} className='App'>
+        <Header />
         <div ref={scrollContainer} className='scroll'>
           <main>
             <Hero />
             <Shortener />
             <Statistics />
             <Boost />
-            <Footer />
           </main>
+          <Footer />
         </div>
       </div>
     </>

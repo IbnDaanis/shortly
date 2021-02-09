@@ -74,14 +74,18 @@ html.has-scroll-dragging {
 
     .App {
   position: fixed;
-  top: 0;
+  top: -130px;
   left: 0;
-  height: 100%;
+  height:100%;
+  @media(max-width: 500px){
+   height: calc(100% + 130px);
+   top: 0;
+  }
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   pointer-events: none;
   .scroll {
-    padding: 4vh 0;
+    padding: 130px 0 0;
     pointer-events: none;
   }
   
