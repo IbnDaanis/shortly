@@ -3,6 +3,7 @@ import { Boost, Header } from './components'
 import { Footer, Hero, Shortener, Statistics } from './containers'
 import GlobalStyle from './styles/globalStyle'
 import useWindowSize from './hooks/useWindowSize'
+import { Background } from './containers/Footer/FooterStyles'
 
 const App = () => {
   //Hook to grab window size
@@ -73,6 +74,7 @@ const App = () => {
           <Footer />
         </div>
       </div>
+      <Background />
     </>
   )
 }

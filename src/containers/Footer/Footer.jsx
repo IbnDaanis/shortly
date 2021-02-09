@@ -85,7 +85,6 @@ const Footer = () => {
           </svg>
         </SocialLinks>
       </Container>
-      <Background />
     </FooterContainer>
   )
 }
