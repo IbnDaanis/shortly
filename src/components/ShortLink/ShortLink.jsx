@@ -11,12 +11,7 @@ const ShortLink = ({ link }) => {
   const [copied, setCopied] = useState(false)
 
   const handleClick = () => {
-    const el = document.createElement('textarea')
-    el.value = link.full_short_link
-    document.body.appendChild(el)
-    el.select()
-    document.execCommand('copy')
-    document.body.removeChild(el)
+    navigator.clipboard.writeText(link.full_short_link)
     setCopied(true)
 
     setTimeout(() => {
